@@ -6,6 +6,11 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
+        </style>
+
 </head>
 <body>
 
@@ -19,8 +24,8 @@
     <label class="logo"><img class="label_obrazek_logo" src="obrazky-onas/logo.png" alt="uvodni logo"></label>
 
     <ul>
-        <li><a class="active" href="#">O nás</a></li>
-        <li><a href="#">Galanterie</a></li>
+        <li><a class="active" href="#o-nas">O nás</a></li>
+        <li><a href="#galanterie">Galanterie</a></li>
         <li><a href="#">Bytový textil a metráž</a></li>
         <li><a href="#">Hračky a dětské zboží</a></li>
         <li><a href="#">Služby šití</a></li>
@@ -28,21 +33,24 @@
 
 </nav>
 
+
+<a name="o-nas"></a>
+
 <div class="frame">
-    <img src="obrazky-onas/logo.png" alt="Logo" class="logo">
+    <img src="obrazky-onas/logo.png" alt="Logo" class="logo_div">
     <div class="content">
         <div class="left">
-            <h1>About us</h1>
-            <p>In Židlochovice, "k Zoubků" has been going to the square since 1984. Over the years, we know the possibilities, needs and tastes of our customers well. When you need small things for sewing, new bedding or to make someone happy with a new toy, come to us.</p>
-            <p>Don't hesitate to ask questions - our saleswomen are experienced, helpful and know how to deal with a lot of your wishes or problems. Whether it's a set of sewing needles or choosing a nice gift for a wedding, for example.</p>
+            <h1>O nás</h1>
+            <p>V Židlochovicích se „k Zoubkům“ na náměstí chodí už od roku 1984. Za ta léta známe dobře možnosti, potřeby i vkus svých zákazníků. Když potřebujete drobnosti na šití, nové povlečení nebo udělat radost novou hračkou, stavte se k nám.</p>
+            <p class="left_odstavec">Určitě neváhejte s dotazy – naše paní prodavačky jsou zkušené, vstřícné a vědí si rady se spoustou vašich přání nebo problémů. Ať už je to sada jehel na šití anebo výběr hezkého dárku třeba ke svatbě.</p>
         </div>
         <div class="right">
-            <h2>Haberdashery, home textile and toys</h2>
-            <p>You will find a number of popular Czech brands as well as works from our own workshop. You can have curtains, tablecloths, pillows and other accessories sewn from the selected yardage. We are happy that we can give your ideas and wishes a concrete form and a distinctive character.</p>
+            <h2>Galanterie, bytový textil a hračky</h2>
+            <p>Najdete u nás řadu oblíbených českých značek i práce z naší vlastní dílny. Z vybrané metráže si můžete nechat ušít závěsy, ubrusy, polštáře a další doplňky. Jsme rádi, že vašim nápadům a přáním dovedeme dát konkrétní podobu a osobitý charakter.</p>
         </div>
     </div>
     <div class="highlight">
-        <p><strong>Do you have a clear idea or an undefined wish? Get behind us!</strong></p>
+        <p><strong>Máte jasnou představu nebo zatím neurčité přání? Stavte se za námi!</strong></p>
     </div>
     <div class="images">
         <img src="obrazky-onas/DSC_3880.jpg" alt="Image 1">
@@ -50,6 +58,48 @@
         <img src="obrazky-onas/DSC_4912.jpg" alt="Image 3">
     </div>
 </div>
+<footer class="footer">
+    <div class="footer-content">
+        <div class="footer-section contact">
+            <h3>KONTAKT</h3>
+            <p>Bc.Michaela Ondrůjová Zoubková</p>
+            <p>Látky,galanterie,bytový textil
+                <br>Dětské zboží a hračky
+                <br>nám.Míru 148
+                <br>667 01 Židlochovice</p>
+                <br>
+            <p>Tel: +420 547 238 205</p>
+            <p>Mob: +420 731 416 227</p>
+            <p>Email: textilzoubek@seznam.cz</p>
+            <div class="social-icons">
+                <a href="https://facebook.com"><img src="obrazky-onas/fb.png" alt="Facebook"></a>
+                <a href="https://instagram.com"><img src="obrazky-onas/ing.png" alt="Instagram"></a>
+            </div>
+        </div>
+        <div class="footer-section hours">
+            <h3>OTEVÍRACÍ DOBA</h3>
+            <p>PO: 8-17</p>
+            <p>UT: 8-17</p>
+            <p>ST: 8-17</p>
+            <p>ČT: 8-17</p>
+            <p>PÁ: 8-17</p>
+            <p>SO: 8-11</p>
+            <p>Ne: Zavřeno</p>
+        </div>
+        <div class="footer-section quick-menu">
+            <br>
+            <br>
+            <p><a href="#o-nas">O NÁS</a></p>
+            <p><a href="#">GALANTERIE</a></p>
+            <p><a href="#">BYTOVÝ TEXTIL A METRÁŽ</a></p>
+            <p><a href="#">HRAČKY A DĚTSKÉ ZBOŽÍ</a></p>
+            <p><a href="#">SLUŽBY ŠITÍ</a></p>
+        </div>
+    </div>
+</footer>
 
+<div class="map-container">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2615.590731077819!2d16.616261876932327!3d49.03739057135701!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4712c71672970423%3A0x87f8241d6c59b8d3!2sZoubek%20-%20L%C3%A1tky!5e0!3m2!1scs!2scz!4v1716743993907!5m2!1scs!2scz" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+</div>
 </body>
 </html>
