@@ -129,3 +129,283 @@ a.active, a:hover{
         left: 0;
     }
 }
+
+
+
+/* OBSAH */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+}
+
+.frame {
+    width: 80%;
+    background-color: #FFFFFF;
+    margin: 160px auto;
+    padding: 70px;
+    position: relative;
+    text-align: left;
+    box-sizing: border-box;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.20);
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.left, .right {
+    box-sizing: border-box;
+}
+
+.left {
+    width: 55%;
+}
+
+.right {
+    width: 40%;
+}
+
+.left h1 {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 30px;
+    font-size: 2em;
+}
+
+.left h1::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 5px;
+    background: rgba(255, 243, 178);
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+}
+
+.left p {
+    margin-bottom: 20px;
+}
+
+.right .top-image img {
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(255, 243, 178, 0.8);
+    margin-bottom: 20px;
+}
+
+.right .bottom-images img {
+    width: 32%;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(255, 243, 178, 0.8);
+    margin-bottom: 10px;
+}
+
+.bottom-images {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (min-width: 1500px){
+    .frame{
+        width: 1200px;
+    }
+}
+
+
+
+/* PATIČKA */
+
+.footer {
+    background-color: rgba(255, 243, 178);
+    padding: 20px;
+    text-align: left;
+    padding-top: 40px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    flex-wrap: wrap;
+    margin: auto;
+
+}
+
+.footer-section {
+    flex: 1;
+
+    min-width: 80px;
+    margin-bottom: 30px;
+    word-wrap: normal;
+}
+
+.footer-section.hours{
+    margin-left: 70px;
+    margin-right: 40px;
+}
+
+.footer-section h3 {
+    margin-bottom: 20px;
+}
+
+.footer-section p, .footer-section a {
+    margin: 5px 0;
+    color: rgba(97, 70, 68);
+    text-decoration: none;
+  
+}
+
+.social-icons img {
+    width: 30px;
+    margin-right: 10px;
+}
+
+.map-container {
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.quick-menu{
+    text-decoration: underline;
+}
+
+.footer-section a:hover {
+    background-color: transparent; /* Make background color transparent */
+    color: purple; /* Change text color on hover */
+    text-decoration: purple underline;
+}
+
+@media (max-width: 990px) {
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section {
+        width: 100%;
+        text-align: left;
+    }
+    .footer-section.hours{
+        margin: 0;
+    }
+}
+
+@media (max-width: 200px) {
+
+    .footer-content {
+        align-items: flex-start;
+    }
+
+    .footer-section {
+        width: 100%;
+    }
+
+    .footer-section.hours{
+        margin: 0;
+    }
+}
+
+
+@media (max-width: 350px) {
+    .footer-content {
+        align-items: flex-start;
+    }
+
+    .footer-section {
+        width: 100%;
+    }
+
+    .footer-section.hours{
+        margin: 0;
+    }
+
+}
+
+
+@media (max-width: 1300px) {
+    .frame {
+        width: 75%;
+        padding: 80px;
+        padding-top: 85px;
+        padding-bottom: 85px;
+    }
+    .left, .right {
+        width: 100%;
+    }
+    .content {
+        flex-direction: column;
+    }
+}
+
+
+
+@media (max-width: 900px) {
+    .frame {
+        width: 75%;
+        padding: 70px;
+        padding-top: 75px;
+        padding-bottom: 75px;
+        margin-top: 140px;
+    }
+    .left, .right {
+        width: 100%;
+    }
+    .content {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 700px) {
+    .frame {
+        width: 85%;
+        padding: 65px;
+        padding-top: 70px;
+        padding-bottom: 70px;
+        margin-top: 120px;
+    }
+    .left, .right {
+        width: 100%;
+    }
+    .content {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 560px) {
+    .frame {
+        width: 85%;
+        padding: 50px;
+        padding-top: 60px;
+        padding-bottom: 60px;
+        margin-top: 100px;
+    }
+    .left, .right {
+        width: 100%;
+    }
+    .content {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 450px) {
+    .frame {
+        width: 90%;
+        padding: 30px;
+        padding-top: 55px;
+        padding-bottom: 55px;
+        margin-top: 90px;
+    }
+    .left, .right {
+        width: 100%;
+    }
+    .content {
+        flex-direction: column;
+    }
+}
