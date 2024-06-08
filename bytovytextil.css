@@ -196,7 +196,13 @@ a:hover, a.active{
     margin-bottom: 10px;
 }
 
+h1{
+    font-size: 35px;
+}
 
+h2{
+    font-size: 20px;
+}
 
 @media (min-width: 1200px) {
     .frame{
@@ -231,13 +237,7 @@ a:hover, a.active{
         width: 90%;
         padding-top: 60px;
     }
-    h1{
-        font-size: 28px;
-    }
 
-    h2{
-        font-size: 20px;
-    }
     .images img {
         width: 200px;
         margin: 5px;
@@ -254,13 +254,7 @@ a:hover, a.active{
         width: 90%;
         padding-top: 60px;
     }
-    h1{
-        font-size: 25px;
-    }
 
-    h2{
-        font-size: 18px;
-    }
 
     .images img {
         width: 180px;
@@ -278,13 +272,7 @@ a:hover, a.active{
         width: 90%;
         padding-top: 60px;
     }
-    h1{
-        font-size: 25px;
-    }
 
-    h2{
-        font-size: 18px;
-    }
     .images img {
         width: 160px;
         margin: 5px;
@@ -301,13 +289,7 @@ a:hover, a.active{
         width: 90%;
         padding-top: 60px;
     }
-    h1{
-        font-size: 25px;
-    }
 
-    h2{
-        font-size: 18px;
-    }
 
     .images img {
         width: 150px;
@@ -330,13 +312,7 @@ a:hover, a.active{
             font-size: 14px;
         }
 
-        h1{
-            font-size: 20px;
-        }
 
-        h2{
-            font-size: 18px;
-        }
     .images img {
         width: 130px;
         margin: 5px;
@@ -356,13 +332,6 @@ a:hover, a.active{
         padding-bottom: 25px;
     }
 
-    h1{
-        font-size: 18px;
-    }
-
-    h2{
-        font-size: 15px;
-    }
     .images img {
         width: 100%;
         margin: 5px;
