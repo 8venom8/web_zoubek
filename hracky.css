@@ -37,6 +37,8 @@ nav{
     background: rgb(255, 255, 255);
     height: 80px;
     width: 100%;
+    position: relative;
+    z-index: 1000;
 }
 
 label.logo{
@@ -53,6 +55,7 @@ label.logo{
 nav ul{
     float: right;
     margin-right: 20px;
+    background-color: #FFFFFF;
 }
 
 nav ul li{
@@ -71,7 +74,7 @@ nav ul li a {
 }
 
 a.active, a:hover{
-    background: rgba(255, 255, 180, 0.73);
+    background: rgba(255, 239, 146, 0.797);
 }
 
 .checkbtn{
@@ -122,7 +125,7 @@ a.active, a:hover{
         font-size: 20px;
     }
     a:hover, a.active{
-        background: rgba(255, 255, 180, 0.73);
+        background: rgba(255, 239, 146, 0.797);
         color: rgba(34,10,9);
     }
     #check:checked ~ ul{
@@ -130,17 +133,53 @@ a.active, a:hover{
     }
 }
 
+@media (max-width: 330px){
 
+    h1 {
+    font-size: 22px;
+    }
+
+    h2 {
+        font-size: 18px;
+        }
+}
+
+
+@media (max-width: 500px){
+
+    h1 {
+    font-size: 27px;
+    }
+
+    h2 {
+        font-size: 22px;
+        }
+}
 
 
 .centered {
     text-align: center;
+
 }
 
+
+
 .underline {
-    text-decoration: underline;
-    text-decoration-color: yellow;
+    position: relative;
+    margin-bottom: 25px;
+
 }
+
+.underline::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background-color: rgba(255, 243, 178);
+}
+
 
 .frame {
     padding: 20px;
@@ -193,7 +232,7 @@ p{
 
 .images img {
     border-radius: 5px;
-    box-shadow: 0px 4px 8px rgba(255, 255, 0, 0.5);
+    box-shadow: 4px 4px 0px rgba(255, 239, 146);
     max-width: 100%;
     height: auto;
     width: calc(33.333% - 10px); /* Three images per row with gap */
@@ -202,6 +241,8 @@ p{
 .bold-text {
     font-weight: bold;
 }
+
+
 
 /* Media query for small screens */
 @media (max-width: 600px) {

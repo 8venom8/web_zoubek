@@ -37,6 +37,8 @@ nav{
     background: rgb(255, 255, 255);
     height: 80px;
     width: 100%;
+    position: relative;
+    z-index: 1000;
 }
 
 label.logo{
@@ -53,6 +55,7 @@ label.logo{
 nav ul{
     float: right;
     margin-right: 20px;
+    background-color: #FFFFFF;
 }
 
 nav ul li{
@@ -71,7 +74,7 @@ nav ul li a {
 }
 
 a.active, a:hover{
-    background: rgba(255, 255, 180, 0.73);
+    background: rgba(255, 239, 146, 0.797);
 }
 
 .checkbtn{
@@ -122,7 +125,7 @@ a.active, a:hover{
         font-size: 20px;
     }
     a:hover, a.active{
-        background: rgba(255, 255, 180, 0.73);
+        background: rgba(255, 239, 146, 0.797);
         color: rgba(34,10,9);
     }
     #check:checked ~ ul{
@@ -133,12 +136,13 @@ a.active, a:hover{
 
 
 
+
 .frame {
-    padding: 20px;
     background-color: #ffffff;
     width: 80%;
     margin: 50px auto;
     padding: 50px;
+    margin-top: 100px;
     border-radius: 10px;
     background-color: #FFFFFF;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.20);
@@ -150,19 +154,29 @@ a.active, a:hover{
     text-align: center;
 }
 
-h2.centered {
+
+.centered {
     text-align: center;
-    font-size: 24px;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
+    margin-top: 25px;
+    font-size: 30px;
 }
 
-h2.underline {
-    text-decoration: underline;
-    text-decoration-color: rgba(255, 255, 0, 0.5);
-    text-decoration-thickness: 4px;
-    display: inline-block;
-    padding-bottom: 10px;
+.underline {
+    position: relative;
+    margin-bottom: 25px;
 }
+
+.underline::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background-color: rgba(255, 243, 178);
+}
+
 
 p.centered {
     text-align: center;
@@ -174,7 +188,8 @@ p.centered {
 p.bold-text {
     font-weight: bold;
     font-size: 18px;
-    margin-bottom: 20px;
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 
 .images {
@@ -187,7 +202,7 @@ p.bold-text {
 
 .images img {
     border-radius: 5px;
-    box-shadow: 0px 4px 8px rgba(255, 255, 0, 0.5);
+    box-shadow: 4px 4px 0px rgba(255, 239, 146);
     max-width: 100%;
     height: auto;
     width: calc(33.333% - 10px);
@@ -264,14 +279,15 @@ p.bold-text {
 .contact-button {
     display: inline-block;
     padding: 10px 20px;
-    width: 160px;
+    width: 180px;
     background-color: rgba(255, 243, 178);
     color: black;
     text-decoration: none;
-    box-shadow: 2px 2px 0px rgb(176, 176, 176);
+    box-shadow: 2px 2px 0px rgb(217, 217, 217);
     border-radius: 3px;
     margin-top: 40px;
     font-weight: 600;
+    font-size: 20px;
 }
 
 .contact-button:hover {
@@ -286,11 +302,48 @@ a.contact-button:hover{
 
 
 
+@media (max-width: 700px) {
+
+
+    .contact-button{
+        display: inline-block;
+        padding: 10px 20px;
+        width: 130px;
+        background-color: rgba(255, 243, 178);
+        color: black;
+        text-decoration: none;
+        box-shadow: 2px 2px 0px rgb(176, 176, 176);
+        border-radius: 3px;
+        margin-top: 40px;
+        font-weight: 600;
+        font-size: 15px;
+    }
+}
 
 
 
 
+@media (min-width: 1500px){
+    .centered{
+        font-size: 35px;
+    }
+    .frame{
+        width: 1000px;
+    }
+}
 
+@media (max-width: 1100px){
+    .centered{
+        font-size: 30px;
+    }
+}
+
+
+@media (max-width: 450px){
+    .centered{
+        font-size: 25px;
+    }
+}
 
 
 

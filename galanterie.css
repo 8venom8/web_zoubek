@@ -37,6 +37,8 @@ nav{
     background: rgb(255, 255, 255);
     height: 80px;
     width: 100%;
+    position: relative;
+    z-index: 1000;
 }
 
 label.logo{
@@ -53,6 +55,7 @@ label.logo{
 nav ul{
     float: right;
     margin-right: 20px;
+    background-color: #FFFFFF;
 }
 
 nav ul li{
@@ -70,8 +73,9 @@ nav ul li a {
     font-weight: bold;
 }
 
-a.active, a:hover{
-    background: rgba(255, 255, 180, 0.73);
+a:hover, a.active{
+    background: rgba(255, 239, 146, 0.797);
+    color: rgba(34,10,9);
 }
 
 .checkbtn{
@@ -121,10 +125,7 @@ a.active, a:hover{
     nav ul li a{
         font-size: 20px;
     }
-    a:hover, a.active{
-        background: rgba(255, 255, 180, 0.73);
-        color: rgba(34,10,9);
-    }
+
     #check:checked ~ ul{
         left: 0;
     }
@@ -174,7 +175,7 @@ body {
     position: relative;
     display: inline-block;
     margin-bottom: 30px;
-    font-size: 2em;
+    font-size: 35px;
 }
 
 .left h1::after {
@@ -211,11 +212,6 @@ body {
     justify-content: space-between;
 }
 
-@media (min-width: 1500px){
-    .frame{
-        width: 1200px;
-    }
-}
 
 
 
@@ -281,6 +277,31 @@ body {
     text-decoration: purple underline;
 }
 
+
+
+@media (max-width: 2500px){
+
+    .frame{
+        margin-top: 210px;
+        width: 1200px;
+    }
+}
+
+
+
+@media (max-width: 1400px){
+
+    .frame{
+        margin-top: 210px;
+        width: 80%;
+    }
+
+    .left h1{
+        font-size: 35px;
+    }
+}
+
+
 @media (max-width: 990px) {
 
     .footer-content {
@@ -331,7 +352,7 @@ body {
 
 @media (max-width: 1300px) {
     .frame {
-        width: 75%;
+        width: 60%;
         padding: 80px;
         padding-top: 85px;
         padding-bottom: 85px;
@@ -344,7 +365,17 @@ body {
     }
 }
 
+@media (min-width: 2500px){
 
+    .frame{
+        margin-top: 210px;
+        width: 1500px;
+    }
+
+    h1{
+        font-size: 40px;
+    }
+}
 
 @media (max-width: 900px) {
     .frame {
