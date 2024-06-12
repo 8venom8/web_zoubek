@@ -6,12 +6,14 @@
     box-sizing: border-box;
 }
 
-body{
+/*body{
     width: 100%;
-    height: 100vh;
-    background-image: linear-gradient(130deg, #FFFFFF, #F5F1A9, #efb0fcdf, #F5F1A9,#FFFFFF,#FFFFFF,#FFFFFF ,#efb0fcdf);
-     background-size: 100%; 
-    /*animation: color 20s ease-in-out infinite;*/
+    min-height: 100%;
+    background-image: linear-gradient(130deg, #FFFFFF, #F5F1A9, #efb0fcdf, #F5F1A9, #FFFFFF, #FFFFFF, #FFFFFF, #efb0fcdf);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    animation: color 20s ease-in-out infinite;
 }
 
 body {
@@ -21,7 +23,7 @@ body {
     font-size: 15px;
 }
 
-/*@keyframes color{
+@keyframes color{
     0%{
         background-position: 0 50%;
     }
@@ -32,6 +34,45 @@ body {
         background-position: 0 50%;
     }
 }*/
+
+
+/*zkoudsim animavi*/
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+    position: relative; /* Set relative position for pseudo-element */
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(130deg, #FFFFFF, #F5F1A9, #efb0fcdf, #F5F1A9, #FFFFFF, #efb0fcdf);
+    background-size: 300% 300%;
+    animation: color 20s ease-in-out infinite;
+    z-index: -1; /* Ensure it is behind all content */
+}
+
+@keyframes color {
+    0% {
+        background-position: 0 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0 50%;
+    }
+}
+
+
+
 
 nav{
     background: rgb(255, 255, 255);
