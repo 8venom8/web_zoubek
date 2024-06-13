@@ -442,3 +442,13 @@ body {
         flex-direction: column;
     }
 }
+.footer-section .patickaTel {
+    color: purple;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.footer-section .patickaTel:hover {
+    color: darkorchid;
+    text-decoration: underline;
+}

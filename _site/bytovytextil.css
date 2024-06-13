@@ -6,7 +6,7 @@
     box-sizing: border-box;
 }
 
-/*body{
+body{
     width: 100%;
     min-height: 100%;
     background-image: linear-gradient(130deg, #FFFFFF, #F5F1A9, #efb0fcdf, #F5F1A9, #FFFFFF, #FFFFFF, #FFFFFF, #efb0fcdf);
@@ -33,17 +33,19 @@ body {
     100%{
         background-position: 0 50%;
     }
-}*/
+}
 
 
 /*zkoudsim animavi*/
+
+/*
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
     font-size: 15px;
-    overflow-x: hidden; /* Prevent horizontal scroll */
-    position: relative; /* Set relative position for pseudo-element */
+    overflow-x: hidden; 
+    position: relative; 
 }
 
 body::before {
@@ -56,7 +58,7 @@ body::before {
     background-image: linear-gradient(130deg, #FFFFFF, #F5F1A9, #efb0fcdf, #F5F1A9, #FFFFFF, #efb0fcdf);
     background-size: 300% 300%;
     animation: color 20s ease-in-out infinite;
-    z-index: -1; /* Ensure it is behind all content */
+    z-index: -1; 
 }
 
 @keyframes color {
@@ -71,7 +73,7 @@ body::before {
     }
 }
 
-
+*/
 
 
 nav{
@@ -496,4 +498,14 @@ h2{
         margin: 0;
     }
 
+}
+.footer-section .patickaTel {
+    color: purple;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.footer-section .patickaTel:hover {
+    color: darkorchid;
+    text-decoration: underline;
 }
