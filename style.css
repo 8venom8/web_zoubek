@@ -216,6 +216,10 @@ a:hover, a.active{
 
 
     /* PATIČKA */
+
+
+
+
     .footer {
         background-color: rgba(255, 243, 178);
         padding: 20px;
@@ -496,3 +500,13 @@ a:hover, a.active{
 
     }
 
+    .footer-section .patickaTel {
+        color: purple;
+        text-decoration: underline;
+        text-underline-offset: 3px;
+    }
+    
+    .footer-section .patickaTel:hover {
+        color: darkorchid;
+        text-decoration: underline;
+    }
