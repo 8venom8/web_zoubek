@@ -32,4 +32,3 @@ RewriteRule ^ %{REQUEST_URI}.html [NC,L]
 DirectoryIndex index.html
 ErrorDocument 404 https://textilzoubek.cz/
 ErrorDocument 500 https://textilzoubek.cz/
-
